@@ -7,3 +7,5 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+restaurant = Restaurant.create!(name: "chez dd", address: "toto", phone_number: "78738378", category: "french")
+Review.create(rating: 3, content: "super", restaurant_id: restaurant.id )
